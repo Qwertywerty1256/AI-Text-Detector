@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5278/5278402.png"/>
+<style type="text/css">
+  .footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .input {
+    text-align: center;
+  }
+  .outputt{
+    width: 1000px;
+    margin: auto;
+  }
+</style>
+
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>AI Text Detector</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<p id = "d"></p>
+
 <body>
+  <script src="script.js"></script>
+  <h1>AI Text Detection</h1>
+  <br></br>
+  <p>This website is used for determining whether text is written by AI or by a human. As you may know, AI is becoming a
+    bigger problem in schools as more and more people are starting to use it to finish homework assignments or write
+    essays. Now, this text detection can help mitigate that problem with decent accuracy.</p>
 
-  <!-- <select id='pre-selected-options1' multiple='multiple'>
-  </select> -->
-  <!-- This is the list (above)-->
-  <br>
-  <label>Enter: </label>
-  <input type="text" name="" id="inp" class="input-default">
-  <button type="button" onclick="add()" class="btn btn-success btn-sm m-b-10 m-l-5">Enter</button>
-  <!-- This is the textbox-->
-  <script>
-    function add() {
+  <br></br>
+  <br></br>
 
-      var inpData = document.getElementById("inp").value;
+  <label style='margin-left:  362px;'>Insert Text Here:</label>
 
 
-      console.log(inpData);
-      const inpArray = inpData.split(" ");
-      x = inpArray.length;
-      console.log(x);
-      const y=[]
-      // console.log(inpArray[(x-1)]);
-      for (i = 0; i < inpArray.length; i++) {
-        console.log(inpArray[i]);
-        y.push(inpArray[i])
-      }
-      console.log(y)
-    }
-    // function add()
-    // {
-    // const x = []//document.getElementById("pre-selected-options1");
-    // var option = document.createElement("option");
-    // option.text = document.getElementById("inp").value;
-    // x.push(option);
-    // // x.toLowerCase();
-    // //x.split(" ");
-    // console.log(x);
-    // }
+  <div class="input">
+    <input class='input' type="text" id="Text" placeholder="Text" size=100></input>
+    <button type="button" onclick="add(); tree(); findFrequentlyUsedWords();">Enter</button>
+  </div>
+  <br></br>
+  <br></br>
+  <div class= outputt>
+  <p id='output' style="display:none;"></p>
 
-  </script>
-  <h1><span id="myText"></span></h1>
+</div>
 
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
 </body>
+<div class="footer" style='color:tomato;'><i>*DISCLAIMER* This website is not 100% accurate so do not expect perfect
+    results every time.</i></p>
+  </body>
 
 </html>
