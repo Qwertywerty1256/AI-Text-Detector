@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<p id = "d"></p>
+<body>
+
+  <!-- <select id='pre-selected-options1' multiple='multiple'>
+  </select> -->
+  <!-- This is the list (above)-->
+  <br>
+  <label>Enter: </label>
+  <input type="text" name="" id="inp" class="input-default">
+  <button type="button" onclick="add()" class="btn btn-success btn-sm m-b-10 m-l-5">Enter</button>
+  <!-- This is the textbox-->
+  <script>
+    function add() {
+
+      var inpData = document.getElementById("inp").value;
+
+
+      console.log(inpData);
+      const inpArray = inpData.split(" ");
+      x = inpArray.length;
+      console.log(x);
+      const y=[]
+      // console.log(inpArray[(x-1)]);
+      for (i = 0; i < inpArray.length; i++) {
+        console.log(inpArray[i]);
+        y.push(inpArray[i])
+      }
+      console.log(y)
+    }
+    // function add()
+    // {
+    // const x = []//document.getElementById("pre-selected-options1");
+    // var option = document.createElement("option");
+    // option.text = document.getElementById("inp").value;
+    // x.push(option);
+    // // x.toLowerCase();
+    // //x.split(" ");
+    // console.log(x);
+    // }
+
+  </script>
+  <h1><span id="myText"></span></h1>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
