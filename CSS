@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  width: 100%;
+
+
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: rgb(40,40,60);
+  color: rgb(255, 255, 255);
+  font-size: 120%;
+}
+
+h1 {
+  text-align: center;
+  border: 3px solid gray;
+  border-radius: 5px;
+  width: 650px;
+  margin: auto;
+  background-color: dodgerblue;
+}
+
+p {
+  text-align: left;
+  margin: auto;
+  width: 910px;
+  border: 3px solid rgb(255, 100, 100);
+  border-radius: 8px;
+  background-color: rgb(100, 180, 170);
+  text-align:  center;
+}
