@@ -1,0 +1,67 @@
+function add(){
+
+  var inpData = document.getElementById("Text").value;
+
+  const inpArray2 = inpData.toLowerCase();
+  const inpArray3 = inpArray2.replace(/[^\w\s]/g, '');
+  console.log(inpArray2)
+  const perArray = inpArray2.split(".");
+  const inpArray = inpArray2.split(/\s+/);
+
+  inpLen = inpArray.length;
+  perLen = perArray.length;
+
+
+  y=[]
+   for (s = 0; s != perLen-1; s++){
+     sentCount = ''
+     x = []
+     sentCount = sentCount.concat(perArray[s]);
+     sentCount = sentCount.split(' ');
+     x.push(sentCount);
+     y.push(sentCount.length)
+    }
+  function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+  }  
+  function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+  }
+  average = (myArrayMax(y) +  myArrayMin(y))/2
+  console.log("average " + average)
+  var count = 0;
+  var count1 = 0;
+  var count2 = 0;
+  for (j = 0; j < inpArray; j++){
+    //if ()
+  }
+  for (i = 0; i < perLen; i++){
+    
+    if (y[i]> average+5 || y[i] < average - 5){
+      count++
+      console.log(y[i] + " y[" + i + "]");
+      console.log(count + " count")
+    }
+    
+    if (15 <= y[i] && y[i] <= 20){
+      count1++
+    }
+    if (5 <= y[i] && y[i] <= 10){
+      count2++
+    }
+  }
+  percentage2 = count2*100/(perLen-1);
+  percentage1 = count1*100 /(perLen-1);
+  percentage = count*100/(perLen-1);
+  totalPer = (percentage1 + percentage + percentage2 / 3)
+  console.log(count*100 + " count")
+  console.log(perLen-1 + " perlen")
+  console.log(totalPer + "%")
+  document.getElementById("output").innerHTML = "There is a "+ Math.round(totalPer) + "%" + " chance that this text was written by AI."
+  
+}
+
+function tree() {
+  document.getElementById('output').style.display = "block";
+}
+
